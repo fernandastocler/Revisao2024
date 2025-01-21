@@ -4,70 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padaria Delicio Pão</title>
+    <!-- Fonte decorativa do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link do CSS -->
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Alternar tema (claro/escuro)
+        function alternarTema() {
+            document.body.classList.toggle('dark-theme');
+        }
+
+        // Exibir mensagem de promoção
+        function mostrarPromocao() {
+            alert("Promoção: Desconto de 10% em todos os produtos nesta semana!");
+        }
+    </script>
 </head>
 <body>
     <header>
         <div class="container">
+            <!-- Logo -->
             <div class="logo">
+                <img src="img/1.png" alt="Logo da Padaria" class="logo-img">
                 <h1>Padaria Delicio Pão</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="index.html">Sobre</a></li>
                     <li><a href="produto.html">Produtos</a></li>
                     <li><a href="Contato.html">Contato</a></li>
                     <li><a href="#pagamento">Formas de Pagamento</a></li>
+                    <li>
+                        <button onclick="alternarTema()" style="background: none; border: none; color: inherit; cursor: pointer;">
+                            Alterar Tema
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Carrossel -->
     <section id="produtos">
         <div class="container">
             <h2>Nossos Produtos</h2>
             <div class="produtos-lista">
                 <div class="produto">
                     <img src="img/bolo1.jpg" alt="Produto 1">
-                    <h3>BOLO TEMATICOS</h3>
+                    <h3>Bolos Temáticos</h3>
+                    <button onclick="mostrarPromocao()">Ver Promoção</button>
                 </div>
                 <div class="produto">
                     <img src="img/bolo5.jpg" alt="Produto 2">
-                    <h3>BOLOS CONFEITADOS</h3>
+                    <h3>Bolos Confeitados</h3>
+                    <button onclick="mostrarPromocao()">Ver Promoção</button>
                 </div>
                 <div class="produto">
                     <img src="img/bolo6.jpg" alt="Produto 3">
-                    <h3>BOLOS VEGANOS</h3>
+                    <h3>Bolos Veganos</h3>
+                    <button onclick="mostrarPromocao()">Ver Promoção</button>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Sobre -->
     <section id="sobre">
         <div class="container">
             <h2>Sobre Nós</h2>
-            <p>A Padaria Sabor & Cia tem como missão trazer para sua mesa os pães e doces mais fresquinhos e deliciosos da cidade. Cada produto é preparado com carinho e ingredientes de qualidade.</p>
+            <div class="sobre-conteudo">
+                <img src="img/padaria.jpg" alt="Imagem sobre nós" class="sobre-img">
+                <p>
+                    A Padaria Delicio Pão tem como missão trazer para sua mesa os pães e doces mais fresquinhos e deliciosos da cidade. 
+                    Cada produto é preparado com carinho e ingredientes de qualidade. 
+                    Nosso objetivo é fazer parte dos momentos mais doces da sua vida e MUITO ROSA!
+                </p>
+            </div>
         </div>
     </section>
 
-    
-
-    
-
-   <!-- Formas de Pagamento -->
-<section id="pagamento">
-    <div class="container">
-        <h2>Formas de Pagamento</h2>
-        <div class="formas de pagamento">
-            <img src="img/bandeiras-cartoes-credito.webp" alt="Produto 7" style="width: 100%; max-width: 800px;">
-            <h3>Aceitamos cartões de crédito, débito, PIX e dinheiro. Pagamento seguro para sua comodidade!</h3>
+    <section id="pagamento">
+        <div class="container">
+            <h2>Formas de Pagamento</h2>
+            <div class="formas-de-pagamento">
+                <img src="img/bandeiras-cartoes-credito.webp" alt="Formas de pagamento" style="width: 100%; max-width: 800px;">
+                <p>Aceitamos cartões de crédito, débito, PIX e dinheiro. Pagamento seguro para sua comodidade!</p>
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <footer>
         <div class="container">
