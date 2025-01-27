@@ -61,6 +61,20 @@ header nav ul li button {
     font-weight: bold;
 }
 
+.center-text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%; /* Isso vai garantir que o conteúdo seja centralizado verticalmente */
+}
+
+.center-text {
+    text-align: center;
+}
+
+
 /* Títulos com fonte decorativa */
 h2 {
     font-family: 'Dancing Script', cursive;
